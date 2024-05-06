@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+  <style>
+    main{
+        font-family: system-ui, sans-serif;
+    }
+    .mensaje{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 50px auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+        margin: 15px;
+        padding: 10px;
+        border-radius: 40px;
+    }
+    .mensaje h4{
+        font-size: 25px;
+    }
+    .fa-circle-user{
+        font-size: 100px;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html"><img src="./src/logo_main.png"></a></div>
+    <div class="user-info-container">
+      <a class="to-userinfo" href="user_info.php"><div class="user-info"><p>Username</p><img src="./src/user_default.png" alt=""></div></a>
+    </div>
+  </header>
+
+  <div class="left-navigator">
+    <div class="gains-display">
+      <p style="color: red;">Gastos: $ 349.820</p>
+      <p style="color: green;">Ganancias: $ 958.320</p>
+    </div>
+
+    <ul class="options-ul">
+      <li><a href="verEmpleados.html">Ver empleados</a></li>
+      <li><a href="verNotificaciones.html">Notificaciones</a></li>
+      <li><a href="verEstadisticas.html">Ver estadísticas</a></li>
+    </ul>
+
+    <div class="stock-display">
+      <h2>Stock</h2>
+      <ul class="stock-ul">
+        <li>Item 1: 8,3%</li>
+        <li>Item 2: 10,8%</li>
+        <li>Item 3: 18,1%</li>
+        <li>Item 4: 24,5%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>Administracion</h1>
+        <p></p>
+        <h3>Ganancias</h3>
+        <div class="lineaGanancias">
+            <canvas id="myChart" width="100%" height="40px"></canvas>
+            <script src="/linea.js"></script>
+        </div>
+        <h3>Ultima Notificacion</h3>
+        <div class="mensaje">
+            <i class="fa-regular fa-circle-user"></i>
+            <h4>Matias Cardozo | Suc. Grand Bourd</h4>
+            <br>
+            <p>Asunto: Nos queda poca lechuga y tomate 09/04/2024</p>
+        </div>
+  </div>
+</body>
+</html>

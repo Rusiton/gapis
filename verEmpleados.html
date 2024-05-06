@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+  <style>
+    main{
+        font-family: system-ui, sans-serif;
+    }
+    .empleados{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .empleado{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .empleadoDatos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+        font-weight: bold;
+
+    }
+    .fa-circle-user{
+        font-size: 100px;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html"><img src="./src/logo_main.png"></a></div>
+    <div class="user-info-container">
+      <a class="to-userinfo" href="user_info.php"><div class="user-info"><p>Username</p><img src="./src/user_default.png" alt=""></div></a>
+    </div>
+  </header>
+
+  <div class="left-navigator">
+    <div class="gains-display">
+      <p style="color: red;">Gastos: $ 349.820</p>
+      <p style="color: green;">Ganancias: $ 958.320</p>
+    </div>
+
+    <ul class="options-ul">
+      <li><a href="user_info.php">Ver empleados</a></li>
+      <li><a href="verNotificaciones.html">Notificaciones</a></li>
+      <li><a href="verEstadisticas.html">Ver estadísticas</a></li>
+    </ul>
+
+    <div class="stock-display">
+      <h2>Stock</h2>
+      <ul class="stock-ul">
+        <li>Item 1: 8,3%</li>
+        <li>Item 2: 10,8%</li>
+        <li>Item 3: 18,1%</li>
+        <li>Item 4: 24,5%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h2>Empleados</h2>
+        <div class="empleados">
+            <div class="empleado">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="empleadosDatos">
+                    <p>Marta Sosa</p>
+                    <p>Edad: 46</p>
+                    <p>Cocinera</p>
+                </div>
+            </div>
+            <div class="empleado">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="empleadosDatos">
+                    <p>Matias Cardozo</p>
+                    <p>Edad: 21</p>
+                    <p>Gerente</p>
+                </div>
+            </div>
+            <div class="empleado">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="empleadosDatos">
+                    <p>Sofia Carrizo</p>
+                    <p>Edad: 28</p>
+                    <p>Cajera</p>
+                </div>
+            </div>
+            <div class="empleado">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="empleadosDatos">
+                    <p>Fran Garcia</p>
+                    <p>Edad: 23</p>
+                    <p>jefe</p>
+                </div>
+            </div>
+            <div class="empleado">
+                <i class="fa-regular fa-circle-user"></i>
+                <div class="empleadosDatos">
+                    <p>Santiago Casellas</p>
+                    <p>Edad: 18</p>
+                    <p>developer</p>
+                </div>
+            </div>
+        </div>
+  </div>
+</body>
+</html>
